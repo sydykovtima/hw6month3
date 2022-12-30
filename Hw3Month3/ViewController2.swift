@@ -1,26 +1,20 @@
 //
 //  ViewController2.swift
-//  Hw3Month3
+//  HW3MONTH3
 //
-//  Created by Mac on 29/12/2022.
+//  Created by Mac on 30/12/2022.
 //
 
 import UIKit
 
 class ViewController2: UIViewController {
     
-    @IBOutlet weak var Lable1: UILabel!
-    
-    @IBOutlet weak var numbers: UILabel!
+    @IBOutlet weak var label: UILabel!
     var info = ""
-    var num = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        label.text = info
         // Do any additional setup after loading the view.
-        Lable1.text = info
-        numbers.text = num
-        
     }
     
 

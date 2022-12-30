@@ -20,11 +20,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //        var person = Person(firstName: "Ivan", lastName: "Dosy", age: 19)
-        //        person.printFullInfo()
-        
-        //        person.printFullInfo(name: <#T##String#>, lastname: <#T##String#>)
-        
         //        namesTableView.dataSource = self
         namesTableView.delegate = self
         namesTableView.register(UITableViewCell.self, forCellReuseIdentifier: "name_cell")
@@ -39,14 +34,6 @@ class ViewController: UIViewController {
         addButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30).isActive = true
         addButton.heightAnchor.constraint(equalToConstant: 80).isActive = true
         addButton.widthAnchor.constraint(equalToConstant: 80).isActive = true
-        
-        //        var student = GeekTechStudents(firstName: "TIma", lastName: "Sydykov", age: 18, course: <#Int#>)
-        //        var student1 = GeekTechStudents(firstName: "Dosya", lastName: "Tsshtanaliev", age: 18, course: <#Int#>)
-        //        var student2 = GeekTechStudents(firstName: "Karim", lastName: "Karimov", age: 18, course: <#Int#>)
-        ////        var persons = [student, student1, student2]
-        //        let  persons:[]
-        //        for i in persons {
-        //            i.printFullInfo()
     }
     
     
@@ -83,6 +70,7 @@ extension ViewController:UITableViewDelegate {
         secondVc.info = names[indexPath.row] as! String
         secondVc.num = numbers[indexPath.row] as! String
         self.navigationController?.pushViewController(secondVc, animated: true)
+        
     }
 }
 
